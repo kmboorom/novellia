@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: dbt_user
+      POSTGRES_PASSWORD: dbt_password
+      POSTGRES_DB: dbt_db
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD', 'pg_isready', '-U', 'dbt_user']
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 10s
+    networks:
+      - db_network
+
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-postgres:latest
+    container_name: dbt_container
+    environment:
+      - DBT_PROFILE_DIR=/root/.dbt
+    volumes:
+      - .:/usr/app
+    working_dir: /usr/app
+    depends_on:
+      - postgres
+    entrypoint: ['sh', '-c', 'dbt init novellia && tail -f /dev/null']
+    networks:
+      - db_network
+
+volumes:
+  postgres_data:
+
+networks:
+  db_network: # Define the custom network
+    driver: bridge

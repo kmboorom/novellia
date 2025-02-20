@@ -1,0 +1,70 @@
+[0m20:40:02.877314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efdc9432120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efdc89f5370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efdc9432660>]}
+
+
+============================== 20:40:02.886180 | b0930273-7be8-4e61-a8a2-2520f1cbd813 ==============================
+[0m20:40:02.886180 [info ] [MainThread]: Running with dbt=1.9.0
+[0m20:40:02.887458 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init novellia', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:40:02.938693 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/root/.dbt')}
+[0m20:40:02.939968 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m20:40:02.942919 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.12/site-packages/dbt/include/starter_project
+[0m20:40:03.092331 [info ] [MainThread]: 
+Your new dbt project "novellia" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:40:03.093374 [info ] [MainThread]: Setting up your profile.
+[0m20:40:03.095016 [error] [MainThread]: Encountered an error:
+
+[0m20:40:03.099025 [error] [MainThread]: Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbt/cli/main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/usr/local/lib/python3.12/site-packages/dbt/task/init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbt/task/init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m20:40:03.101011 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 0.28066283, "process_in_blocks": "10552", "process_kernel_time": 0.182448, "process_mem_max_rss": "87140", "process_out_blocks": "1464", "process_user_time": 1.307548}
+[0m20:40:03.102015 [debug] [MainThread]: Command `dbt init` failed at 20:40:03.101881 after 0.28 seconds
+[0m20:40:03.102841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efdc8e09df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efdc877b230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efdc881f0b0>]}
+[0m20:40:03.103717 [debug] [MainThread]: Flushing usage events
+[0m20:40:03.393817 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:40:21.137519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4307097140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4306805460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4306806f30>]}
+
+
+============================== 20:40:21.141646 | 288bf8a5-f739-42d9-b785-8d30190ef73c ==============================
+[0m20:40:21.141646 [info ] [MainThread]: Running with dbt=1.9.0
+[0m20:40:21.143104 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init novellia', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:40:21.154209 [info ] [MainThread]: A project called novellia already exists here.
+[0m20:40:21.156155 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.103709675, "process_in_blocks": "0", "process_kernel_time": 0.130219, "process_mem_max_rss": "86108", "process_out_blocks": "0", "process_user_time": 1.101855}
+[0m20:40:21.157696 [debug] [MainThread]: Command `dbt init` succeeded at 20:40:21.157489 after 0.11 seconds
+[0m20:40:21.158816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4307097140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4306531160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f430765a0c0>]}
+[0m20:40:21.159990 [debug] [MainThread]: Flushing usage events
+[0m20:40:21.604361 [debug] [MainThread]: An error was encountered while trying to flush usage events
