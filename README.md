@@ -70,3 +70,26 @@ novellia:
 ```
 
 run dbt debug and all checks should pass
+
+### Accessing Query terminal
+
+Open your browser.
+Navigate to:
+http://localhost:5050
+Log in with:
+Email: admin@admin.com
+Password: admin
+
+Set up the connection:
+
+In pgAdmin, go to the "Servers" section.
+Right-click "Servers" → "Create" → "Server".
+In the General tab:
+Set Name to Postgres DB (or any name you prefer).
+In the Connection tab:
+Host name/address: postgres_db (since both containers are in the same db_network)
+Port: 5432
+Maintenance Database: dbt_db
+Username: dbt_user
+Password: dbt_password
+Click "Save".

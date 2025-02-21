@@ -334,3 +334,86 @@ click.exceptions.Abort
 [0m23:33:29.008026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0f67f5da00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0f67f5e780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0f67a2b8c0>]}
 [0m23:33:29.008892 [debug] [MainThread]: Flushing usage events
 [0m23:33:29.365005 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:01:25.270123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f737b21fc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f73792cbbc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f73797dede0>]}
+
+
+============================== 13:01:25.279604 | 7671b40d-2bce-4775-8bc4-12d4b8d1765b ==============================
+[0m13:01:25.279604 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:01:25.280755 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init novellia', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:01:25.333685 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/root/.dbt')}
+[0m13:01:25.334918 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m13:01:25.338420 [info ] [MainThread]: A project called novellia already exists here.
+[0m13:01:25.340253 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.12635243, "process_in_blocks": "79456", "process_kernel_time": 0.277538, "process_mem_max_rss": "86940", "process_out_blocks": "1464", "process_user_time": 1.243781}
+[0m13:01:25.341195 [debug] [MainThread]: Command `dbt init` succeeded at 13:01:25.341099 after 0.13 seconds
+[0m13:01:25.342057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f737920fc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f73797653a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7379cb3800>]}
+[0m13:01:25.342916 [debug] [MainThread]: Flushing usage events
+[0m13:01:25.718059 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:04:06.961817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e026e7980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e03f08410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e028249b0>]}
+
+
+============================== 13:04:06.970990 | afbbafda-4c5a-4b88-8232-f800db3b6c5e ==============================
+[0m13:04:06.970990 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:04:06.972170 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init novellia', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:04:07.029021 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/root/.dbt')}
+[0m13:04:07.030387 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m13:04:07.033382 [info ] [MainThread]: A project called novellia already exists here.
+[0m13:04:07.035395 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.13317369, "process_in_blocks": "79288", "process_kernel_time": 0.193729, "process_mem_max_rss": "86804", "process_out_blocks": "1464", "process_user_time": 1.259239}
+[0m13:04:07.036452 [debug] [MainThread]: Command `dbt init` succeeded at 13:04:07.036350 after 0.13 seconds
+[0m13:04:07.037356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e01f57dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e01e40cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2e0232c470>]}
+[0m13:04:07.038262 [debug] [MainThread]: Flushing usage events
+[0m13:04:07.360447 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:41:01.214180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2223d0b320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22244340e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2223d7f500>]}
+
+
+============================== 14:41:01.219631 | e8152161-278d-4716-bc32-cdd9ad178693 ==============================
+[0m14:41:01.219631 [info ] [MainThread]: Running with dbt=1.9.0
+[0m14:41:01.221298 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:41:01.238655 [info ] [MainThread]: dbt version: 1.9.0
+[0m14:41:01.239701 [info ] [MainThread]: python version: 3.12.4
+[0m14:41:01.240771 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m14:41:01.241760 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[0m14:41:01.242931 [info ] [MainThread]: Using profiles dir at /root/.dbt
+[0m14:41:01.243877 [info ] [MainThread]: Using profiles.yml file at /root/.dbt/profiles.yml
+[0m14:41:01.244872 [info ] [MainThread]: Using dbt_project.yml file at /usr/app/dbt_project.yml
+[0m14:41:01.246145 [info ] [MainThread]: Configuration:
+[0m14:41:01.247096 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m14:41:01.248191 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:41:01.249392 [info ] [MainThread]: Required dependencies:
+[0m14:41:01.250446 [debug] [MainThread]: Executing "git --help"
+[0m14:41:01.267607 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:41:01.269106 [debug] [MainThread]: STDERR: "b''"
+[0m14:41:01.270125 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:41:01.271318 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m14:41:01.272655 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m14:41:01.273781 [info ] [MainThread]: dbt looked for a profiles.yml file in /root/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:41:01.274839 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </usr/app/dbt_project.yml> not found
+
+[0m14:41:01.277084 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.14804149, "process_in_blocks": "1640", "process_kernel_time": 0.120335, "process_mem_max_rss": "86244", "process_out_blocks": "0", "process_user_time": 1.123128}
+[0m14:41:01.278158 [debug] [MainThread]: Command `dbt debug` failed at 14:41:01.278058 after 0.15 seconds
+[0m14:41:01.278982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22240e0470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2223b12300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22237fd3d0>]}
+[0m14:41:01.279858 [debug] [MainThread]: Flushing usage events
+[0m14:41:01.532608 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:30:12.784213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba60a366c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba5f0ca8a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba5f0cab10>]}
+
+
+============================== 15:30:12.787626 | a48aee78-fd43-40ce-93a7-e9e6ea0cb356 ==============================
+[0m15:30:12.787626 [info ] [MainThread]: Running with dbt=1.9.0
+[0m15:30:12.789067 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run -m +stg__immunization', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:30:12.790299 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /usr/app/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:30:12.792043 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.09362788, "process_in_blocks": "0", "process_kernel_time": 0.090573, "process_mem_max_rss": "85728", "process_out_blocks": "0", "process_user_time": 1.096943}
+[0m15:30:12.793069 [debug] [MainThread]: Command `dbt run` failed at 15:30:12.792967 after 0.09 seconds
+[0m15:30:12.793914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba5f236360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba5eefc770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba60a366c0>]}
+[0m15:30:12.794771 [debug] [MainThread]: Flushing usage events
+[0m15:30:13.040356 [debug] [MainThread]: An error was encountered while trying to flush usage events
