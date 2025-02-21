@@ -93,3 +93,31 @@ Maintenance Database: dbt_db
 Username: dbt_user
 Password: dbt_password
 Click "Save".
+
+### answering Questions
+
+3. Write queries to answer
+
+- How many patients had the influenza vaccine?
+
+```
+select * from fct__vaccine_count
+where vc_name ilike '%nfluenza%'
+```
+
+- What are the top 5 most common vaccines?
+
+```
+with ranked as (
+    select *,
+           rank() over (order by vc_count desc) as num
+    from fct__vaccine_count
+)
+select vc_count,vc_name, num
+from ranked
+where num <= 5
+```
+
+- Calculate the average number of vital signs measured per patient.
+- Find the most recent report with a recorded cholesterol lab result for each patient.
+- Share two interesting facts about a specific patient.
