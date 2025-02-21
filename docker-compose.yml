@@ -4,7 +4,7 @@ services:
   postgres:
     image: postgres:15
     container_name: postgres_db
-    restart: always
+    restart: no
     environment:
       POSTGRES_USER: dbt_user
       POSTGRES_PASSWORD: dbt_password
@@ -13,12 +13,9 @@ services:
       - '5432:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    healthcheck:
-      test: ['CMD', 'pg_isready', '-U', 'dbt_user']
-      interval: 10s
-      retries: 5
-      start_period: 30s
-      timeout: 10s
+      - ./make_tables.sql:/tmp/make_tables.sql # Available in container but NOT auto-run
+      - ./load_data.sql:/tmp/load_data.sql # Available in container but NOT auto-run
+      - ./data:/tmp/data
     networks:
       - db_network
 
