@@ -23,7 +23,7 @@ final as (
             (jsonb_array_elements(patient)->'reference'->>0)::text, 
             'Patient/', 
             ''
-        ) AS patient_id,
+        ) as patient_id,
         REGEXP_REPLACE("primarySource"::text, '^\[|"|\]$', '', 'g') AS primary_source,
         REGEXP_REPLACE("resourceType"::text, '^\[|"|\]$', '', 'g') AS resource_type,
         REGEXP_REPLACE("status"::text, '^\[|"|\]$', '', 'g') AS status,

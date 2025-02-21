@@ -119,5 +119,37 @@ where num <= 5
 ```
 
 - Calculate the average number of vital signs measured per patient.
+
+```
+with base as (
+select
+*
+from stg__observation
+where category = 'vital-signs'
+),
+vitals_count as (
+select count(observation_id) as cnt,
+patient_id
+from base
+group by patient_id
+)
+select avg(cnt) from vitals_count
+
+```
+
 - Find the most recent report with a recorded cholesterol lab result for each patient.
+
+```
+select
+patient_id,
+max(effective_date_time) as  most_recent_chol_reading --the docs say I should use this timestamp over the other
+from stg__observation
+where category = 'laboratory'
+and lab_test_name like '%holesterol%'
+group by 1
+```
+
 - Share two interesting facts about a specific patient.
+  id =
+  a4a401d1-a46a-eb4a-8a38-760d5d79d6ec
+  is the only divorced patient in my 13 patient sample and his mothers maiden name is Lakin and although he lives in kansas has never smoked cigarettes
