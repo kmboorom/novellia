@@ -417,3 +417,17 @@ Runtime Error
 [0m15:30:12.793914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba5f236360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba5eefc770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba60a366c0>]}
 [0m15:30:12.794771 [debug] [MainThread]: Flushing usage events
 [0m15:30:13.040356 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:33:23.786018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ed319bd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ed4bc0350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ed4ae7740>]}
+
+
+============================== 20:33:23.796752 | 5be40122-10ca-446f-9358-900a05de31af ==============================
+[0m20:33:23.796752 [info ] [MainThread]: Running with dbt=1.9.0
+[0m20:33:23.798139 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init novellia', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:33:23.860346 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/root/.dbt')}
+[0m20:33:23.861940 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m20:33:23.865594 [info ] [MainThread]: A project called novellia already exists here.
+[0m20:33:23.867694 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.14615697, "process_in_blocks": "79456", "process_kernel_time": 0.277411, "process_mem_max_rss": "86760", "process_out_blocks": "1464", "process_user_time": 1.407605}
+[0m20:33:23.868907 [debug] [MainThread]: Command `dbt init` succeeded at 20:33:23.868787 after 0.15 seconds
+[0m20:33:23.869879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ed30d9100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ed2e3c6b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ed2c40a10>]}
+[0m20:33:23.870933 [debug] [MainThread]: Flushing usage events
+[0m20:33:24.139466 [debug] [MainThread]: An error was encountered while trying to flush usage events
