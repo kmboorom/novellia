@@ -8,12 +8,12 @@ If I had to model out [every FHIR resource](https://www.hl7.org/fhir/resourcelis
 
 For modelling structure I opted to using what is really a 5 part modelling structure because of how complex HL7 FHIR is. I generally view the 6 (including untransformed raw data) layers as follows:
 
-raw -- completely untransformed arrived from source
-base-- raw data with least amount of transforms required to be brought into stg
-base_int -- any helper tables or other models needed to get the staging layer right
-stg-- a complete base dataset with every column in the right naming convention, timezone, datatype. columns in this layer should be ready to go on your path to value added marts. There should be no changes or business logic added to the data itself, but the completed staging table should be the starting point for all business logic related transforms that is traditionally done in dbt
-int-- whatever you have to do to arrive at value added marts. crunch that data here.
-marts (fct/dim) -- models that are ready for consumption for analysis. Final aggregations, unions/joins of ints, etc
+- raw -- completely untransformed arrived from source 
+- base-- raw data with least amount of transforms required to be brought into stg
+- base_int -- any helper tables or other models needed to get the staging layer right
+- stg-- a complete base dataset with every column in the right naming convention, timezone, datatype. columns in this layer should be ready to go on your path to value added marts. There should be no changes or business logic added to the data itself, but the completed staging table should be the starting point for all business logic related transforms that is traditionally done in dbt
+- int-- whatever you have to do to arrive at value added marts. crunch that data here.
+- marts (fct/dim) -- models that are ready for consumption for analysis. Final aggregations, unions/joins of ints, etc
 
 What this doesn't have, but any final dbt product should--
 
@@ -188,6 +188,5 @@ group by 1
 ```
 
 - Share two interesting facts about a specific patient.
-  id =
-  a4a401d1-a46a-eb4a-8a38-760d5d79d6ec
-  is the only divorced patient in my 13 patient sample and his mothers maiden name is Lakin and although he lives in kansas has never smoked cigarettes
+
+```id = a4a401d1-a46a-eb4a-8a38-760d5d79d6ec``` is the only divorced patient in my 13 patient sample and his mothers maiden name is Lakin and although he lives in kansas has never smoked cigarettes
